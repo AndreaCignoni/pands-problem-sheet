@@ -10,16 +10,18 @@
 # Using sys.argv module to access command line arguments in a list
 import sys
 # Get the filename from the command line arguments
-Anne_of_Green_Gable = sys.argv[0]
+Anne_of_Green_Gables = sys.argv[0]
 
 # Open the file for reading
-with open(Anne_of_Green_Gable, 'r') as f:
+with open(Anne_of_Green_Gables, 'r', encoding="utf-8") as f:
     # Initialize a counter for the number of e's found
+    content = f.read()
     e_count = 0
     # Loop over each line in the file
-    for line in f:
+    for char in content:
         # Count the number of e's in the line and add it to the counter
-        e_count += line.count('e') + line.count('E')
+        if char == "e":
+            e_count += 1
 
 # Output the final count of e's found
-print(e_count)
+print("E Count: ", e_count)
