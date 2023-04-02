@@ -144,7 +144,7 @@ The main problems presented by the task were accessing a file, reading it and pe
 
 Therefore, this is how I took the filename from the command line arguments:
 
-- **Anne_of_Green_Gable = sys.argv[0]**
+- **Anne_of_Green_Gable = sys.argv[1]**
 
 **Command line arguments** are those values that are passed during calling of program along with the calling statement. The **sys.argv** takes the command line arguments in the form of a list and the first element of the **sys argv** is the name of the Python file. The second element onwards contains the command line arguments.  
 Once the name of the file was found, the next step was to open that same file for reading which I have performed using a with **open statement** as follows:
@@ -167,6 +167,8 @@ Since the only operation required was to read the information the file contained
 - **e_count = 0**
 
 In the case of a string, the counting begins from the start (**0**) of the string till the end. It is also possible to specify the start and end index from where you want the search to begin The count() method returns an integer value. Since the counting was to be performed line by line, I have then implemented a **for loop** array to parse every single line and where I have also specified the character I wanted to search in them.
+
+To run this code, the terminal command must contain the name the text file whose characters must be counted after the program name itself.
 </dd>
 
 # <p align="center"> Plottask.py
