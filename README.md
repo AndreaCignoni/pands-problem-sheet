@@ -200,4 +200,10 @@ The most common types of layouts that can be implelented with this package are *
 5. A *pie chart* is a circular graph which is divided into segments or slices of pie. It is used to represent the percentage or proportional data where each slice of pie represents a category and are implemented with the **plt.pie** command. Example code:
 
 ![image4.png](https://dz2cdn1.dzone.com/storage/temp/13805534-pie.png)
+
+Once established how to design an *histogram* through the **Matplotlib** module, the second part of the task consisted in implementing the function on which the graph structure had to be built on. For this purpose I have imported the third party package **NumPy** that used to perform a wide variety of mathematical operations on arrays. It adds powerful data structures to Python that guarantee efficient calculations with arrays and matrices and it supplies an enormous library of high-level mathematical functions that operate on these arrays and matrices. Here value provided in the task included a mean value of 5 , namely the average value and in the program referred to as *loc=5*; a deviation of 2 (referred as *scale=2*); and finally a distribution of 1000 (*size=1000*). To calculate the mean, find the sum  of all values, and the sum by the number of values: [w3school.com]
+(https://www.w3schools.com/python/python_ml_mean_median_mode.asp#:~:text=Mean%2C%20Median%2C%20and%20Mode&text=In%20Machine%20Learning%20and%20in,Mode%20%2D%20The%20most%20common%20value)
+
+Finally, it is worth noticing that both the two above mentioned modules where accessed through **dot (.) notation**. **The dot (.) notation** is a way to access the attribute and methods of each method of instances of different object classes. It is usually preceded by the object instance, in this case **plt** for **Matplotlib** and **np** for **NumPy** while the right end of the dot notation contains the attributes and methods.
+
 </p>
