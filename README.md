@@ -162,7 +162,7 @@ In Python, you can access a file by using the **open()** method and create a con
 
 My main point of reference here was [geeksforgeeks.org](https://www.geeksforgeeks.org/reading-writing-text-files-python/).  
 
-Since the only operation required was to read the information the file contained, I have performed the opening in a **"r"** mode and then , in order to perform the vowel "e" counter, stored the same file in the variable "*f*". The counter was subsequently initialized using the Python built-in **e_count** function that could return the count of a designeted element in the text.
+Since the only operation required was to read the information the file contained, I have performed the opening in a **"r"** mode and then , in order to perform the vowel "e" counter, stored the same file in the variable "*f*". In relation to the **UTF-8 encoding system**, it was added here to translate any Unicode character to a matching unique binary string. The counter was subsequently initialized using the Python built-in **e_count** function that could return the count of a designeted element in the text.
 
 - **e_count = 0**
 
