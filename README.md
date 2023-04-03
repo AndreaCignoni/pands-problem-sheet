@@ -182,4 +182,4 @@ This assignment consisted in representing a series of data according to the give
 The most common types of layouts that can be implelented with this package are bar graphs, histogram, scatterplot, area plot, pie plot for viewing the data.
 
 1. Bar graphs are called with the **plt.bar** command that returns an image like the following:
-![My Image](image.png)
+![image.png](image.png)
