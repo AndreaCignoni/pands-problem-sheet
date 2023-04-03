@@ -182,6 +182,7 @@ This assignment consisted in representing a series of data according to the give
 The most common types of layouts that can be implelented with this package are *bar graphs*, *histogram*, *scatterplot*, *area plot*, *pie plot* for viewing the data.
 
 1. The *bar graphs* are used in data comparison where we can measure the changes over a period of time. It can be represented horizontally or vertically. Longer the bar it has the greater the value it contains. This plot is called with the **plt.bar** command that returns an image like the following:
+
 ![image.png](https://dz2cdn1.dzone.com/storage/temp/13805530-bar.png)
 
 2. The *histogram plot* is used where the data is been distributed while bar graph is used in comparing the two entities. *Histograms* are preferred during the arrays or data containing the long list. The command to be used in this case is **plt.hist** and here an example of this kind of plot:
