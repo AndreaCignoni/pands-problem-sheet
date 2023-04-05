@@ -211,9 +211,9 @@ As already pointed out, when creating a plot with **Matplotlib** the first step 
 
  - Define the x-axis and corresponding y-axis values as lists.
 
-'# x axis values'
+*# x axis values*  
 **x = [1,2,3]**
-# corresponding y axis values
+*# corresponding y axis values*  
 **y = [2,4,1]**
 
 + Plot them on canvas using .plot() function.
