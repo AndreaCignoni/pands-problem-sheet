@@ -276,9 +276,9 @@ For a better understanding on how to develop a graph, please refer to [Geeksforg
 
 Returning to the weekly task we were assigned, my histogram was to be planned on a **normal distribution** of a 1000 values with a **mean** of 5 and **standard deviation** of 2. The method for finding the **normal distribution** of the data with **NumPy** is **random.normal()** which has  three parameters:
 
-•	**loc** – (average) where the top of the bell is located.
-•	**Scale** – (standard deviation) how uniform you want the graph to be distributed.
-•	**size** – Shape of the returning array
+•	**loc** – (average) where the top of the bell is located.  
+•	**Scale** – (standard deviation) how uniform you want the graph to be distributed.  
+•	**size** – Shape of the returning array.
 
 The **mean** value is the average value, while the standard deviation the **scale**, with the **normal distribution** corresponding to the **size**. Therefore,  according to the required array the value of 2 was attributed to the parameter **loc**, the value of 5 to the parameter **scale** and 1000 to the parameter **scalesize**. Once again, the source of my assumptions come from [Geeksforgeeks.org](https://www.geeksforgeeks.org/how-to-plot-normal-distribution-over-histogram-in-python/) All these three values were then passed to the histogram function **plt.hist()** through a variable called **values**. 
 
@@ -299,5 +299,5 @@ After that this function was created I have defined the x-range and y-range and,
 
 Once we run the plottask.py program the following graph generated is:
 
-![Figure_1.png](C:\Users\User\OneDrive\Desktop\Figure_1.png)
+![Figure_1.png](Figure_1.png)
 </p>
