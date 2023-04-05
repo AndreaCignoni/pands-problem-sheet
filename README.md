@@ -296,8 +296,4 @@ My function then mirrored the syntax of **h(x)=x3** as requested.
 After that this function was created I have defined the x-range and y-range and, in order to do this, I have used the **NumPy** **linspace** function, which creates a range of evenly-spaced numbers.
 
 **X = np.linspace (0, 10, num=100)**
-
-Once we run the plottask.py program the following graph generated is:
-
-![Figure_1.png](C:\Users\User\OneDrive\Desktop\Figure_1.png)
 </p>
