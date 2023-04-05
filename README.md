@@ -212,20 +212,20 @@ As already pointed out, when creating a plot with **Matplotlib** the first step 
  - Define the x-axis and corresponding y-axis values as lists.
 
 *# x axis values*  
-**x = [1,2,3]**
+**x = [1,2,3]**  
 *# corresponding y axis values*  
 **y = [2,4,1]**
 
 + Plot them on canvas using .plot() function.
 
-# plotting the points 
+*# plotting the points*  
 **plt.plot(x, y)**
 
 * Give a name to x-axis and y-axis using .xlabel() and .ylabel() functions.
 
-# naming the x axis
-**plt.xlabel('x - axis')**
-# naming the y axis
+*# naming the x axis*  
+**plt.xlabel('x - axis')**  
+*# naming the y axis*  
 **plt.ylabel('y - axis')**
 
 - Give a title to your plot using **.title()** function.
@@ -234,20 +234,20 @@ As already pointed out, when creating a plot with **Matplotlib** the first step 
   
 + Finally, to view your plot, we use **.show()** function.
 
-# function to show the plot
+*# function to show the plot*  
 **plt.show()**
 
 This structure represents the base on which this module allows us building an incredible amount of sophisticated features. For instance, we can legend and plot more lines on the same graph:
 
-# plotting the line 1 points 
-**plt.plot(x1, y1, label = "line 1")**
+*# plotting the line 1 points*  
+**plt.plot(x1, y1, label = "line 1")**  
 
-# plotting the line 2 points 
+*# plotting the line 2 points*  
 **plt.plot(x2, y2, label = "line 2")**
 
 We can also create a small rectangular box to explain the types of line and their color using **.legend()** function that will output the information stored in the **label** variable.
   
-# show a legend on the plot
+*# show a legend on the plot*  
 **plt.legend()**
 
 The lines  can be customised in many ways establishing their colour, style, width, marker, and adding markers. For instance:
@@ -260,12 +260,12 @@ Finally, in order to apply a particular math ratio, we can shape the curves of t
 
 In the following example, we are using **Numpy** to pass a *range*( first two arguments) and an *increment h* (third argument) to the x line as:
 
-**# setting the x - coordinates**
+*# setting the x - coordinates*  
 **x = np.arange(0, 2*(np.pi), 0.1)**
 
 Proceeding with this example, to get the corresponding y-axis values, we can simply use the predefined **np.sin()** method on the **NumPy** array.
 
-**# setting the corresponding y - coordinates**
+*# setting the corresponding y - coordinates*  
 **y = np.sin(x)**
   
 The x and y arrays are then developed according to the above parameters implementing **the plt.plot()** function.
@@ -299,5 +299,5 @@ After that this function was created I have defined the x-range and y-range and,
 
 Once we run the plottask.py program the following graph generated is:
 
-![Figure_1.png](Figure_1.png)
+![Figure_1.png](C:\Users\User\OneDrive\Desktop\Figure_1.png)
 </p>
