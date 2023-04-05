@@ -73,11 +73,11 @@ Generally speaking, a slice object is used to specify how to slice a sequence. Y
 In order to perform this task, it was necessary to create a **function** not in-built in Python and a loop to repeat the consequent calculation until the cycle is completed.  
 A **function** is a reusable block of code that can perform a basic task and it used to avoid rewriting the same logic or code again and again in a program. In practice, a **function** in Python is defined with the **def** keyword, followed by the **function** names, zero or more argument names contained in parenthesis **()**, and a colon **:** to indicate the start of the function.  
 
-The task itself required to perfom the Collantz conjecture so I consequently called this function "collantz". The contents of the function then had follow and the calculation cycle requested to divide by two if the number promped by the user was even or multiply it by three and add one if the input was odd in a loop.Finally, as this cycle had to be repeated until the final amount was 1, a return statement had to follow. In fact, **return statements** are necessary whenever it is required to control the flow of a program as in this case.
+The task itself required to perfom the Collantz conjecture so I consequently called this function *collatz*. The contents of the function then had follow and the calculation cycle requested to divide by two if the number promped by the user was even or multiply it by three and add one if the input was odd in a loop.Finally, as this cycle had to be repeated until the final amount was 1, a return statement had to follow. In fact, **return statements** are necessary whenever it is required to control the flow of a program as in this case.
 
 For a very informative and detailed explanation on how to define and call function, please refer to [Realpython.com](https://www.freecodecamp.org/news/python-functions-define-and-call-a-function/)
 
-Since the collantz calculation had to be repeated something over and over until the result was equal to 1, I have then implemented a **loop** that iterated the task until this condition was satisfied. A for loop in Python is a control flow statement that is used to repeatedly execute a group of statements as long as a specific outcome is obtained. The two steps to execute included to check whether the number number provided was even or odd and,then, to apply the operations consequently. Therefore, as this calculation had to be performed as long as a condition was true (n>1), I have decided to shape this collantz function using a **while loop**.
+Since the *collatz* calculation had to be repeated something over and over until the result was equal to 1, I have then implemented a **loop** that iterated the task until this condition was satisfied. A for loop in Python is a control flow statement that is used to repeatedly execute a group of statements as long as a specific outcome is obtained. The two steps to execute included to check whether the number number provided was even or odd and,then, to apply the operations consequently. Therefore, as this calculation had to be performed as long as a condition was true (n>1), I have decided to shape this *collatz* function using a **while loop**.
  
 In python, a **while loop** is used to execute a block of statements repeatedly until a given condition is satisfied. And when the condition becomes false, the line immediately after the loop in the program is executed. The **else** clause is only executed when your while condition becomes false. If you break out of the loop, or if an exception is raised, it won’t be executed.  
 My main point of reference in this case has been [geeksforgeeks.org](https://www.geeksforgeeks.org/loops-in-python/).
@@ -201,9 +201,103 @@ The most common types of layouts that can be implelented with this package are *
 
 ![image4.png](https://dz2cdn1.dzone.com/storage/temp/13805534-pie.png)
 
-Once established how to design an *histogram* through the **Matplotlib** module, the second part of the task consisted in implementing the function on which the graph structure had to be built on. For this purpose I have imported the third party package **NumPy** that used to perform a wide variety of mathematical operations on arrays. It adds powerful data structures to Python that guarantee efficient calculations with arrays and matrices and it supplies an enormous library of high-level mathematical functions that operate on these arrays and matrices. Here value provided in the task included a mean value of 5 , namely the average value and in the program referred to as *loc=5*; a deviation of 2 (referred as *scale=2*); and finally a distribution of 1000 (*size=1000*). To calculate the mean, find the sum  of all values, and the sum by the number of values: [w3school.com]
-(https://www.w3schools.com/python/python_ml_mean_median_mode.asp#:~:text=Mean%2C%20Median%2C%20and%20Mode&text=In%20Machine%20Learning%20and%20in,Mode%20%2D%20The%20most%20common%20value)
+Once established how to design an *histogram* through the **Matplotlib** module, the second part of the task consisted in implementing the function on which the graph structure had to be built on. For this purpose I have imported the third party package **NumPy** that used to perform a wide variety of mathematical operations on arrays. It adds powerful data structures to Python that guarantee efficient calculations with arrays and matrices and it supplies an enormous library of high-level mathematical functions that operate on these arrays and matrices.
 
-Finally, it is worth noticing that both the two above mentioned modules where accessed through **dot (.) notation**. **The dot (.) notation** is a way to access the attribute and methods of each method of instances of different object classes. It is usually preceded by the object instance, in this case **plt** for **Matplotlib** and **np** for **NumPy** while the right end of the dot notation contains the attributes and methods.
+To complete this general pverview on the graph creation in Python, it is worth noticing that both the two above mentioned modules where accessed through **dot (.) notation**. **The dot (.) notation** is a way to access the attribute and methods of each method of instances of different object classes. It is usually preceded by the object instance, in this case **plt** for **Matplotlib** and **np** for **NumPy** while the right end of the dot notation contains the attributes and methods.  
 
+As already pointed out, when creating a plot with **Matplotlib** the first step is to *import* this same module with the following method:
+
+**import matplotlib.pyplot as plt**
+
+ - Define the x-axis and corresponding y-axis values as lists.
+
+# x axis values
+**x = [1,2,3]**
+# corresponding y axis values
+**y = [2,4,1]**
+
++ Plot them on canvas using .plot() function.
+
+# plotting the points 
+**plt.plot(x, y)**
+
+* Give a name to x-axis and y-axis using .xlabel() and .ylabel() functions.
+
+# naming the x axis
+**plt.xlabel('x - axis')**
+# naming the y axis
+**plt.ylabel('y - axis')**
+
+- Give a title to your plot using **.title()** function.
+
+**Plt.title('My first graph!')**
+  
++ Finally, to view your plot, we use **.show()** function.
+
+# function to show the plot
+**plt.show()**
+
+This structure represents the base on which this module allows us building an incredible amount of sophisticated features. For instance, we can legend and plot more lines on the same graph:
+
+# plotting the line 1 points 
+**plt.plot(x1, y1, label = "line 1")**
+
+# plotting the line 2 points 
+**plt.plot(x2, y2, label = "line 2")**
+
+We can also create a small rectangular box to explain the types of line and their color using **.legend()** function that will output the information stored in the **label** variable.
+  
+# show a legend on the plot
+**plt.legend()**
+
+The lines  can be customised in many ways establishing their colour, style, width, marker, and adding markers. For instance:
+
+**plt.plot(x, y, color='green', linestyle='dashed', linewidth = ** marker='o', markerfacecolor='blue', markersize=12)**
+  
+Finally, in order to apply a particular math ratio, we can shape the curves of the plots we are representing applying the functions contained in the **NumPy** module. 
+
+**import numpy as np**
+
+In the following example, we are using **Numpy** to pass a *range*( first two arguments) and an *increment h* (third argument) to the x line as:
+
+**# setting the x - coordinates**
+**x = np.arange(0, 2*(np.pi), 0.1)**
+
+Proceeding with this example, to get the corresponding y-axis values, we can simply use the predefined **np.sin()** method on the **NumPy** array.
+
+**# setting the corresponding y - coordinates**
+**y = np.sin(x)**
+  
+The x and y arrays are then developed according to the above parameters implementing **the plt.plot()** function.
+
+**plt.plot(x, y)**
+
+For a better understanding on how to develop a graph, please refer to [Geeksforgeeks.org](https://www.geeksforgeeks.org/graph-plotting-in-python-set-1/) .
+
+Returning to the weekly task we were assigned, my histogram was to be planned on a **normal distribution** of a 1000 values with a **mean** of 5 and **standard deviation** of 2. The method for finding the **normal distribution** of the data with **NumPy** is **random.normal()** which has  three parameters:
+
+•	**loc** – (average) where the top of the bell is located.
+•	**Scale** – (standard deviation) how uniform you want the graph to be distributed.
+•	**size** – Shape of the returning array
+
+The **mean** value is the average value, while the standard deviation the **scale**, with the **normal distribution** corresponding to the **size**. Therefore,  according to the required array the value of 2 was attributed to the parameter **loc**, the value of 5 to the parameter **scale** and 1000 to the parameter **scalesize**. Once again, the source of my assumptions come from [Geeksforgeeks.org](https://www.geeksforgeeks.org/how-to-plot-normal-distribution-over-histogram-in-python/) All these three values were then passed to the histogram function **plt.hist()** through a variable called **values**. 
+
+The task then asked me to plot a specific function and create a range of x and y values that corresponded to a given range. I have then proceeded as follows:
+
+1.	Function definition
+2.	Creation of a range of continuous x-values and map their corresponding y-values
+
+
+My function then mirrored the syntax of **h(x)=x3** as requested.
+
+**def h(x)**
+**return x**3**
+
+After that this function was created I have defined the x-range and y-range and, in order to do this, I have used the **NumPy** **linspace** function, which creates a range of evenly-spaced numbers.
+
+**X = np.linspace (0, 10, num=100)**
+
+Once we run the plottask.py program the following graph generated is:
+
+![Figure_1.png](Figure_1.png)
 </p>
