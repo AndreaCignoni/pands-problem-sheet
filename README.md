@@ -299,5 +299,5 @@ After that this function was created I have defined the x-range and y-range and,
 
 Once we run the plottask.py program the following graph generated is:
 
-![Figure_1.png](Figure_1.png)
+![Figure_1.png](C:\Users\User\OneDrive\Desktop\Figure_1.png)
 </p>
