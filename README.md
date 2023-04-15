@@ -40,7 +40,7 @@ Calculations in Python operate the same way they do in real life. As if with any
 
 **Complex numbers**: Complex numbers are used for data science scientific notation, and high-level math.
 
-In the addition performed in the present program, the main issues were to sum two positive integers, convert them in to cents and returninga result with a decimal point between the euro and cent of the amount.I have overcome this problem dividing the added amounts by 100 and formatting the result with the float() function.
+In the addition performed in the present program, the main issues were to sum two positive integers, convert them in to cents and returninga result with a decimal point between the euro and cent of the amount. To format the result given by the addition in this way I have followed the instructions found in [www.thepythonguru.com] (https://thepythonguru.com/python-string-formatting/) and applied the *format()* method accordingly. This function must follow the string one wants to format in dot notation and the string must contain the *format code* we want to pass to the *argument* in curly brackets **{}** . The *argument*  which has to be output with two decimals, **:.2f** - where **f** stays for *floating* -  is the sum of the cents and must  be inserted in the round brackets after the function **.format(sum/100.)**
 
 + *Outputing an answer including the addition result.*
 

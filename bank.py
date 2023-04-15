@@ -9,5 +9,5 @@ number2 = int(input ('Enter amount2(in cent): '))
 sum = (number1 + number2)
 # the output concatenates a string and an integer in decimal format
 print (f"The sum of this is €" + '{:.2f}'.format(sum/100.))
-# In order to obtain the integer in the decimal format I have followed
+# In order to obtain the integer in the decimal format I have followed the instructins found in
 # https://thepythonguru.com/python-string-formatting/
