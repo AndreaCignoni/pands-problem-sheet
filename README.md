@@ -73,14 +73,16 @@ Generally speaking, a slice object is used to specify how to slice a sequence. Y
 In order to perform this task, it was necessary to create a **function** not in-built in Python and a loop to repeat the consequent calculation until the cycle is completed.  
 A **function** is a reusable block of code that can perform a basic task and it used to avoid rewriting the same logic or code again and again in a program. In practice, a **function** in Python is defined with the **def** keyword, followed by the **function** names, zero or more argument names contained in parenthesis **()**, and a colon **:** to indicate the start of the function.  
 
-The task itself required to perfom the Collantz conjecture so I consequently called this function *collatz*. The contents of the function then had follow and the calculation cycle requested to divide by two if the number promped by the user was even or multiply it by three and add one if the input was odd in a loop.Finally, as this cycle had to be repeated until the final amount was 1, a return statement had to follow. In fact, **return statements** are necessary whenever it is required to control the flow of a program as in this case.
+The task itself required to perfom the Collantz conjecture so I consequently called this function *collatz*. The contents of the function then had follow and the calculation cycle requested to divide by two if the number promped by the user was even or multiply it by three and add one if the input was odd in a loop.
 
 For a very informative and detailed explanation on how to define and call function, please refer to [Realpython.com](https://www.freecodecamp.org/news/python-functions-define-and-call-a-function/)
 
 Since the *collatz* calculation had to be repeated something over and over until the result was equal to 1, I have then implemented a **loop** that iterated the task until this condition was satisfied. A for loop in Python is a control flow statement that is used to repeatedly execute a group of statements as long as a specific outcome is obtained. The two steps to execute included to check whether the number number provided was even or odd and,then, to apply the operations consequently. Therefore, as this calculation had to be performed as long as a condition was true (n>1), I have decided to shape this *collatz* function using a **while loop**.
  
-In python, a **while loop** is used to execute a block of statements repeatedly until a given condition is satisfied. And when the condition becomes false, the line immediately after the loop in the program is executed. The **else** clause is only executed when your while condition becomes false. If you break out of the loop, or if an exception is raised, it won’t be executed.  
+In Python, a **while loop** is used to execute a block of statements repeatedly until a given condition is satisfied. And when the condition becomes false, the line immediately after the loop in the program is executed. The **else** clause is only executed when your while condition becomes false. If you break out of the loop, or if an exception is raised, it won’t be executed.  
 My main point of reference in this case has been [geeksforgeeks.org](https://www.geeksforgeeks.org/loops-in-python/).
+
+Lastly, the task requested to print a list of number as an orizontal series of integers without squared brackets. The solution to these two problems was to use the **append** function to add every successive number generated after another and then to format the list itself with the **asterisk operator**.
 </dd>
 
 # <p align="center"> Weekday.py#
