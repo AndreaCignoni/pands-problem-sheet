@@ -21,4 +21,4 @@ with open("anne-of-green-gables.txt", 'r', encoding="utf-8") as f:
         # Loop over each character in the line
         e_count += line.count('e')+line.count('E')
 # Output the final count of e's found
-print("E Count: ", e_count)
+print(e_count)
