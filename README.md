@@ -142,16 +142,16 @@ The program, in its basic structure, prompts the user to enter a positive number
 **this program open a file called "Anne Of Green Gable" and reads the text calculating the number of letter 'e' contained.**
 <p align="justify">
 
-The main problems presented by the task were accessing a file, reading it and performing a character counting. I have then decided to solve the first issue by importing the **sys module** which let us access system-specific parameters and functions. This module provides functions which are used to manipulate different parts of the Python Runtime Environment and one of these is the **argv** function that returns a list of command line arguments passed to a Python script. In the output, the name of the script is always the item at index 0, and the rest of the arguments are stored at subsequent indices.  
+The main problems presented by the task were accessing a file, reading it and performing a character counting. Before that, I was asked that the filename had to be passed from an argument on the command line. I have then decided to solve the first issue by importing the **sys module** which let us access system-specific parameters and functions. This module provides functions which are used to manipulate different parts of the Python Runtime Environment and one of these is the **argv** function that returns a list of command line arguments passed to a Python script. In the output, the name of the script is always the item at index 0, and the rest of the arguments are stored at subsequent indices.  
 
 Therefore, this is how I took the filename from the command line arguments:
 
-- **Anne_of_Green_Gable = sys.argv[1]**
+- **anneOfGreenGable = sys.argv[1]**
 
 **Command line arguments** are those values that are passed during calling of program along with the calling statement. The **sys.argv** takes the command line arguments in the form of a list and the first element of the **sys argv** is the name of the Python file. The second element onwards contains the command line arguments.  
 Once the name of the file was found, the next step was to open that same file for reading which I have performed using a with **open statement** as follows:
 
-- **with open(Anne_of_Green_Gable, 'r') as f:**
+- **with open("anne-of-green-gable.txt", 'r') as f:**
 
 In Python, you can access a file by using the **open()** method and create a context using the **with Open** statement. This function returns a file object, which has methods and attributes for getting information about and manipulating the opened file. Access modes govern the type of operations possible in the opened file. It refers to how the file will be used once its opened. These modes also define the location of the File Handle in the file. File handle is like a cursor, which defines from where the data has to be read or written in the file. There are 6 access modes in Python:
 
@@ -276,7 +276,8 @@ The x and y arrays are then developed according to the above parameters implemen
 
 For a better understanding on how to develop a graph, please refer to [Geeksforgeeks.org](https://www.geeksforgeeks.org/graph-plotting-in-python-set-1/) .
 
-Returning to the weekly task we were assigned, my histogram was to be planned on a **normal distribution** of a 1000 values with a **mean** of 5 and **standard deviation** of 2. The method for finding the **normal distribution** of the data with **NumPy** is **random.normal()** which has  three parameters:
+Returning to the weekly task we were assigned, my histogram was to be planned on a **normal distribution** of a 1000 values with a **mean** of 5 and **standard deviation** which meant that the graph to be generated, then, was a bell-shaped curve graph. This graph signifies that the peak point is the mean of the data set and half of the values of data set lie on the left side of the mean and other half lies on the right part of the mean telling about the distribution of the values. The graph is symmetric distribution.  
+For this porpuse, I have imported the **Scipy** module, a Python library useful in solving many mathematical equations and algorithms, and calculated the general array of data with **NunPy**  and its **random.normal()** function basing the general array on the following  three parameters:
 
 •	**loc** – (average) where the top of the bell is located.  
 •	**Scale** – (standard deviation) how uniform you want the graph to be distributed.  

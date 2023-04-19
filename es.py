@@ -10,7 +10,7 @@
 # Using sys.argv module to access command line arguments in a list
 import sys
 # Get the filename from the command line arguments
-anneOfGreenGables = sys.argv[1]
+anneOfGreenGables = sys.argv[0]
 
 # Open the file for reading
 with open("anne-of-green-gables.txt", 'r', encoding="utf-8") as f:

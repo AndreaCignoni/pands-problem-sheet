@@ -6,11 +6,12 @@
 
 import numpy as np
 import matplotlib.pyplot as plt
+from scipy.stats import norm
+import statistics
 
 # Set random seed for reproducibility
 np.random.seed(42)
-# Generate 1000 values from a normal distribution
-# with mean 5 and standard deviation 2
+# Generating 1000 values with mean 5 and standard deviation 2
 values = np.random.normal(loc=5, scale=2, size=1000)
 
 # Plot the histogram of generated values
@@ -26,8 +27,8 @@ def h(x):
 # Generate x values in the range [0, 10]
 x = np.linspace (0, 10, num=100)
 
-# Plot the function h(x) = x^3
-plt.plot(x, h(x))
+# Plot the function h(x) = x^3 in normal distribution
+plt.plot(norm.pdf(x, h(x)))
 plt.title('Function h(x)=x^3')
 plt.xlabel('x')
 
