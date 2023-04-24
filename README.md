@@ -1,11 +1,10 @@
 # pands-problem-sheet
-# <p align="center">Helloworld.py
-</p>
+# <div align="center">Helloworld.py
+</div>
 
 **This program says "Hello World!"**
-</p>
-
-<p align="justify">A “Hello world!” program is traditionally used to introduce novice programmers to a programming language. This sentence is a string, which generally is a sequence of characters but, even a single character, can be considered a string. In Python, strings are "immutable" which means they cannot be changed after they are created and, if you try to modify any value in a string, it will throw an error. In order to incorporate the changes, you must create a new string.
+<div align="justify">
+A “Hello world!” program is traditionally used to introduce novice programmers to a programming language. This sentence is a string, which generally is a sequence of characters but, even a single character, can be considered a string. In Python, strings are "immutable" which means they cannot be changed after they are created and, if you try to modify any value in a string, it will throw an error. In order to incorporate the changes, you must create a new string.
 
 In practice, to generate a string, you need to wrap a character or a sequence of characters in quotation marks. There can be multiple ways of doing this:
 
@@ -14,15 +13,15 @@ In practice, to generate a string, you need to wrap a character or a sequence of
 + Triple quotes that allow to embed "double quotes" as well as 'single quotes' in your string. 
 
 Strings can also span across multiple lines.
-</dd>
+</div>
 
 
-# <p align="center"> Bank.py 
-</p>
+# <div align="center"> Bank.py 
+</div>
 
 **Bank.py sums 2 amounts in cent and convert them into Euro.**
-
-<p align="justify">This code is created generating two variables whose objects is attributed by a user, a sum of the two integers promped that returns a floating number with two decimals and a final output that provide an answer concatenating a string with the result of the addition. These steps are detailed as follows:
+<div align="justify">
+This code is created generating two variables whose objects is attributed by a user, a sum of the two integers promped that returns a floating number with two decimals and a final output that provide an answer concatenating a string with the result of the addition. These steps are detailed as follows:
 
 - *Input function and two variable generation.*
 
@@ -47,28 +46,29 @@ In the addition performed in the present program, the main issues were to sum tw
 The last step to complete this assignment consisted in outputing an intelegible answer to the user providing the result of the addition of the two numbers. This implied printing a concatenation of two strings: the answer to provide and the result in Euros. In Python, there are a few ways to concatenate or combine strings. In order to merge two strings into a single object, you may use the + operator. However, since in this instance the concatenation included a string and a non-string type variable, namely the amount to provide, it was necessary to cast this last element into a string through the str() function.
 
 My main point of reference here was [digitalocean.com](https://www.digitalocean.com/community/tutorials/python-concatenate-string-and-int)
-</dd>
+</div>
 
-# <p align="center">Accounts.py
-</p>
+# <div align="center">Accounts.py
+</div>
 
 **This program returns a masked account number with X showing the last 4 digits only**
-
-<p align="justify">Here, I have put into practice three basic methods: inputing, concatenating strings and outputing slices of code. The input function was replicated as per the Bank.py program previously illustrated in the present Readme file.
+<div align="justify">
+Here, I have put into practice three basic methods: inputing, concatenating strings and outputing slices of code. The input function was replicated as per the Bank.py program previously illustrated in the present Readme file.
 
 My main point of reference for learning how to request an input from a user was [W3School](https://www.w3schools.com/python/python_user_input.asp)
 
 The main challenge in this task was to output an answer where only the last 4 characters of the bank account were displayed and while the other 6 digits were replaced with Xs. Again, as in the previous code, the possible solution to perform such an output was to concatenate a series of Xs corresponding to the numbers of integers inserted by the user minus the last four digits and add a slice of the 4 last digits corresponding to the actual account number given. This last non string element had to be, therefore, output with the slicing function giving the last 4 numbers from the end.
 
 Generally speaking, a slice object is used to specify how to slice a sequence. You can specify where to start the slicing, and where to end. You can also specify the step, which allows you to e.g. slice only every other item. In this case, the action requested was to get the characters from position 4, and all the way to the end. To perform this method, I followed all the instructions illustrated in [w2school](https://www.w3schools.com/python/python_strings_slicing.asp).
-</dd>
+</div>
 
-# <p align="center"> Collatz.py
-</p>
+# <div align="center"> Collatz.py
+</div>
 
 **This array triggers the collatz calculation and stops with the final 4-1-0 loop.**
 
-<p align="justify">The Collatz Conjecture is the simplest math problem no one can solve. The rules of the sequence depend on the parity of the number itself. If the number is even, then the rule returns half the original number. If the number is odd, then we multiply the number by three, and add one. The conjecture asks whether repeating these two simple arithmetic operations will eventually transform every positive integer into 1.In fact, as shown with the program, the whole always reaches 1, no matter which positive integer is chosen to start the sequence.  
+<div align="justify">
+The Collatz Conjecture is the simplest math problem no one can solve. The rules of the sequence depend on the parity of the number itself. If the number is even, then the rule returns half the original number. If the number is odd, then we multiply the number by three, and add one. The conjecture asks whether repeating these two simple arithmetic operations will eventually transform every positive integer into 1.In fact, as shown with the program, the whole always reaches 1, no matter which positive integer is chosen to start the sequence.  
 
 In order to perform this task, it was necessary to create a **function** not in-built in Python and a loop to repeat the consequent calculation until the cycle is completed.  
 A **function** is a reusable block of code that can perform a basic task and it used to avoid rewriting the same logic or code again and again in a program. In practice, a **function** in Python is defined with the **def** keyword, followed by the **function** names, zero or more argument names contained in parenthesis **()**, and a colon **:** to indicate the start of the function.  
@@ -83,13 +83,13 @@ In Python, a **while loop** is used to execute a block of statements repeatedly 
 My main point of reference in this case has been [geeksforgeeks.org](https://www.geeksforgeeks.org/loops-in-python/).
 
 Lastly, the task requested to print a list of number as an orizontal series of integers without squared brackets. The solution to these two problems was to use the **append** function to add every successive number generated after another and then to format the list itself with the **asterisk operator**.
-</dd>
+</div>
 
-# <p align="center"> Weekday.py#
-</p>
+# <div align="center"> Weekday.py#
+</div>
 
 **Week.py says whether current day is a weekday or a weekend.**
-<p align="justify">
+<div align="justify">
 
 The only way I could run it was necessary to import a module as no built-in Python function could accomplish such a task. For a comprehensive list of Python bulit in functions please refer to [w3school](https://www.w3schools.com/python/python_ref_functions.asp).  
 
@@ -108,15 +108,14 @@ When we import a module, we are making it available to us in our current program
 Where *today* and *weekday* are the two functions inside the module that we want to use and the empty round brackets represent the data to be extracted. All properties and methods of a specified module which can be found through the built-in Python function **dir ()** along with the name of the module.  
 To learn how to import modules, I have followed a very instructive and easily understadable tutorial found in [digitalocean.com](https://www.digitalocean.com/community/tutorials/how-to-import-modules-in-python-3).  
 
-After having created a variable calling the current day, the two conditions required by the task, namely the two different answers to be give in case of a weekday or in a weekend, had to be created through an **if** and **else** statement structure. In this array, the *if statement* evaluates condition. In case, this is true the code inside **if** is executed and the code inside **else** is skipped. On the contrary, if the condition evaluated in the **if** clause results to be false, the code inside **else** is executed and the code inside **if** is skipped.<dd>
+After having created a variable calling the current day, the two conditions required by the task, namely the two different answers to be give in case of a weekday or in a weekend, had to be created through an **if** and **else** statement structure. In this array, the *if statement* evaluates condition. In case, this is true the code inside **if** is executed and the code inside **else** is skipped. On the contrary, if the condition evaluated in the **if** clause results to be false, the code inside **else** is executed and the code inside **if** is skipped.
+<div>
 
-
-
-# <p align="center"> SquareRoot.py
-</p>
+# <div align="center"> SquareRoot.py
+</div>
 
 **This program receives any number and returns its square root using the Newman method.**
-<p align="justify">
+<div align="justify">
 
 The script **squareroot.py** utilizes Newton's method to find the square root of a number through a numerical algorithm. Generally, in complex equations the roots cannot be solved for explicitly, so they must be approximated; that’s where the Newton method comes into play. The first step of the method takes an *initial guess* and uses the function and function derivative to calculate a *next guess*. Then, this *guess* is used in a similar fashion to calculate the *next guess*, and so on, until a tolerance or iteration limit is met. 
 
@@ -134,13 +133,13 @@ The general syntax and structure of my array are:
 ▪ **statements** are the commands to be repeated. One should be an update for the value tested in the condition.
 
 The program, in its basic structure, prompts the user to enter a positive number, then calls the **"square_root"** function with the input value as an argument, and ultimately displays the input number and its estimated square root with one decimal point precision.
-</dd>
+</div>
 
-# <p align="center"> Es.py
-</p>
+# <div align="center"> Es.py
+</div>
 
 **this program open a file called "Anne Of Green Gable" and reads the text calculating the number of letter 'e' contained.**
-<p align="justify">
+<div align="justify">
 
 The main problems presented by the task were accessing a file, reading it and performing a character counting. Before that, I was asked that the filename had to be passed from an argument on the command line. I have then decided to solve the first issue by importing the **sys module** which let us access system-specific parameters and functions. This module provides functions which are used to manipulate different parts of the Python Runtime Environment and one of these is the **argv** function that returns a list of command line arguments passed to a Python script. In the output, the name of the script is always the item at index 0, and the rest of the arguments are stored at subsequent indices.  
 
@@ -171,11 +170,11 @@ Since the only operation required was to read the information the file contained
 In the case of a string, the counting begins from the start (**0**) of the string till the end. It is also possible to specify the start and end index from where you want the search to begin The count() method returns an integer value. Since the counting was to be performed line by line, I have then implemented a **for loop** array to parse every single line and where I have also specified the character I wanted to search in them.
 
 To run this code, the terminal command must contain the name the text file whose characters must be counted after the program name itself.
-</dd>
+</div>
 
-# <p align="center"> Plottask.py
-</p>
-<p align="justify">
+# <div align="center"> Plottask.py
+</div>
+<div align="justify">
 
 **This code generates a histogram of a normal distribution of a 1000 values with a mean of 5 and standard deviation of 2.**
 
@@ -299,4 +298,4 @@ My function then mirrored the syntax of **h(x)=x3** as requested.
 After that this function was created I have defined the x-range and y-range and, in order to do this, I have used the **NumPy** **linspace** function, which creates a range of evenly-spaced numbers.
 
 **X = np.linspace (0, 10, num=100)**
-</p>
+</div>
