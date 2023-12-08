@@ -39,7 +39,7 @@ Calculations in Python operate the same way they do in real life. As if with any
 
 **Complex numbers**: Complex numbers are used for data science scientific notation, and high-level math.
 
-In the addition performed in the present program, the main issues were to sum two positive integers, convert them in to cents and returning their result with a decimal point between the euro and cent of the amount. To format the result given by the addition in this way I have followed the instructions found in [www.thepythonguru.com] (https://thepythonguru.com/python-string-formatting/) and applied the *format()* method accordingly. This function must follow the string one wants to format in dot notation and the string must contain the *format code* we want to pass to the *argument* in curly brackets **{}** . The *argument*  which has to be output with two decimals, **:.2f** - where **f** stays for *floating* -  is the sum of the cents and must  be inserted in the round brackets after the function **.format(sum/100.)**
+In the addition performed in the present program, the main issues were to sum two positive integers, convert them in to cents and returning their result with a decimal point between the euro and cent of the amount. To format the result given by the addition in this way I have followed the instructions found in [www.thepythonguru.com](https://thepythonguru.com/python-string-formatting/) and applied the *format()* method accordingly. This function must follow the string one wants to format in dot notation and the string must contain the *format code* we want to pass to the *argument* in curly brackets **{}** . The *argument*  which has to be output with two decimals, **:.2f** - where **f** stays for *floating* -  is the sum of the cents and must  be inserted in the round brackets after the function **.format(sum/100.)**
 
 + *Outputing an answer including the addition result.*
 
@@ -85,7 +85,7 @@ My main point of reference in this case has been [geeksforgeeks.org](https://www
 Lastly, the task requested to print a list of number as an orizontal series of integers without squared brackets. The solution to these two problems was to use the **append** function to add every successive number generated after another and then to format the list itself with the **asterisk operator**.
 </div>
 
-# <div align="center"> Weekday.py#
+# <div align="center"> Weekday.py
 </div>
 
 **Week.py says whether current day is a weekday or a weekend.**
